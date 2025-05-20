@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Sanhar</title>
+  <link rel="stylesheet" href="style.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <img id="logo" src="logo.png" alt="logo">
+    <button id="toggleBtn">☰</button>
+    <nav id="navMenu">
+      <ul class="nav-links">
+        <li class="links"><a href="#about">About Me</a></li>
+        <li class="links"><a href="#skills">skills</a></li>
+        <li class="links"><a href="#projects">Projects</a></li>
+        <li class="links"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+
+  <!-- About Section -->
+  <div class="about" id="about">
+    <div class="about-description">
+      <p id="aboutbigtext">
+        Hi! <br> I'm a creative and results-driven <span>Full Stack Developer</span><br>
+        who enjoys bringing ideas to life through code.
+      </p>
+      <p><b>About Me:</b><br>
+        I’m a passionate and detail-oriented web developer with a strong command of both front-end and back-end technologies. I specialize in building clean, responsive, and user-friendly websites using HTML, CSS, and JavaScript. To enhance interactivity and user experience, I often integrate jQuery into my projects.
+      </p>
+      <p>
+        On the backend, I work with PHP to develop custom functionalities and dynamic features. I'm also experienced with WordPress, creating fully functional, easy-to-manage websites tailored to client needs. Whether it’s a personal portfolio, business website, or blog, I enjoy turning ideas into engaging digital experiences.
+      </p>
+    </div>
+    <div class="profile">
+      <img id="dp" src="snhr.jpg" alt="profile picture" >
+    </div>
+  </div>
+
+
+<section id="skills">
+  <h2>My Skills</h2>
+  <p>I possess a strong and diverse skill set in web development and programming. My expertise spans across front-end and back-end technologies, enabling me to build responsive, interactive, and user-friendly websites and applications. I am constantly learning and adapting to new technologies to deliver high-quality solutions.</p>
+  <div class="skill-list"></div>
+</section>
+
+
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="education-columns">
+    <div class="edu-card">
+      <h3>Bachelor's Degree (CSE)</h3>
+      <p><strong>Anna University</strong></p>
+      <p>2019 – 2023</p>
+      <p>CGPA: 8.1</p>
+    </div>
+    <div class="edu-card">
+      <h3>Higher Secondary</h3>
+      <p><strong>BTM Higher Secondary</strong></p>
+      <p>2017 – 2019</p>
+      <p>Percentage : 72</p>
+    </div>
+    <div class="edu-card">
+      <h3>High School</h3>
+      <p><strong>BTM High School</strong></p>
+      <p>2015 – 2017</p>
+      <p>Percentage : 89</p>
+    </div>
+    
+    
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section class="projects" id="projects">
+  <h2>My Projects</h2>
+  <p>Explore a collection of my recent web development projects, each designed to demonstrate my skills in front-end and back-end technologies. These projects showcase my ability <br> to create responsive layouts using HTML and CSS, add interactivity with JavaScript and jQuery, and develop dynamic features with PHP. You’ll also find websites built  with <br>WordPress, customized to meet unique client requirements. From clean UI design to functional coding, each project reflects my dedication to quality and user experience.</p>
+  <div class="slider-wrapper">
+    <div class="slider">
+     
+      <div class="proj">
+        <img src="proj1.png" alt="Project 1" >
+        <h3 class="projecttitle">Project 1</h3>
+        <button class="viewdetails">View Details</button>
+    </div>
+      <div class="proj">
+        <img src="proj2.png" alt="Project 2" >
+        <h3 class="projecttitle">Project 2</h3>
+        <button class="viewdetails">View Details</button>
+    </div>
+      <div class="proj">
+        <img src="proj3.png" alt="Project 3" >
+        <h3 class="projecttitle">Project 3</h3>
+        <button class="viewdetails">View Details</button>
+    </div>
+      <div class="proj">
+        <img src="proj4.png" alt="Project 4" >
+        <h3 class="projecttitle">Project 4</h3>
+        <button class="viewdetails">View Details</button>
+    </div>
+    <div class="proj">
+        <img src="proj5.png" alt="Project 5" >
+        <h3 class="projecttitle">Project 5</h3>
+        <button class="viewdetails">View Details</button>
+    </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <span class="close">&times;</span>
+  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+ class="lightbox-content" id="lightboxImg" alt="Project Image">
+</div>
+
+
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h3>Contact Me</h3>
+    <form id="form" method="post">
+      <label for="name">NAME:</label>
+      <input type="text" id="name" name="name">
+      <p id="namemsg">Enter your name</p>
+
+      <label for="email">EMAIL:</label>
+      <input  id="email" name="email">
+      <p id="emailmsg">Enter a valid email address</p>
+
+      <label for="message">MESSAGE:</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+      <p id="msgmsg">Enter your message</p>
+      
+
+      <button id="submitbutton" type="submit">SEND</button>
+      <p id="successmsg">Form submitted succecfully</p>
+    </form>
+  </section>
+
+  <a href="#" id="toTop"><i class="fas fa-arrow-up"></i></a>
+  <a href="https://wa.me/918943767462?text=Hello%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20know%20more." class="whatsapp-float" target="_blank">
+  <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" alt="WhatsApp">
+</a>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; MUHAMMED SANHAR KT</p>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
